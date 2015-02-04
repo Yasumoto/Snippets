@@ -7,20 +7,28 @@
 //
 
 import Cocoa
+import ParseOSX
 
 @NSApplicationMain
 class AppDelegate: NSObject, NSApplicationDelegate {
 
+    func applicationWillFinishLaunching(aNotification: NSNotification) {
+        Parse.enableLocalDatastore()
 
+        //Parse.setApplicationId(
 
-    func applicationDidFinishLaunching(aNotification: NSNotification) {
-        // Insert code here to initialize your application
+        PFUser.enableAutomaticUser()
+
+        let defaultACL: PFACL = PFACL()
+        PFACL.setDefaultACL(defaultACL, withAccessForCurrentUser: true)
+
+        PFAnalytics.trackAppOpenedWithLaunchOptionsInBackground([:], block: nil)
+        
     }
 
     func applicationWillTerminate(aNotification: NSNotification) {
         // Insert code here to tear down your application
     }
-
 
 }
 

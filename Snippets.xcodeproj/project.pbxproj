@@ -12,6 +12,18 @@
 		407E05B51A814360009EEE07 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 407E05B41A814360009EEE07 /* Images.xcassets */; };
 		407E05B81A814360009EEE07 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 407E05B61A814360009EEE07 /* Main.storyboard */; };
 		407E05C41A814360009EEE07 /* SnippetsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 407E05C31A814360009EEE07 /* SnippetsTests.swift */; };
+		407E05D01A81439F009EEE07 /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 407E05CE1A81439F009EEE07 /* Bolts.framework */; };
+		407E05D11A81439F009EEE07 /* ParseOSX.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 407E05CF1A81439F009EEE07 /* ParseOSX.framework */; };
+		407E05D31A8143E7009EEE07 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 407E05D21A8143E7009EEE07 /* CFNetwork.framework */; };
+		407E05D51A8143F6009EEE07 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 407E05D41A8143F6009EEE07 /* CoreGraphics.framework */; };
+		407E05D71A8143FC009EEE07 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 407E05D61A8143FC009EEE07 /* CoreLocation.framework */; };
+		407E05D91A814402009EEE07 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 407E05D81A814402009EEE07 /* QuartzCore.framework */; };
+		407E05DB1A814409009EEE07 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 407E05DA1A814409009EEE07 /* Security.framework */; };
+		407E05DD1A814410009EEE07 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 407E05DC1A814410009EEE07 /* SystemConfiguration.framework */; };
+		407E05DF1A81441D009EEE07 /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 407E05DE1A81441D009EEE07 /* libsqlite3.dylib */; };
+		407E05E11A814423009EEE07 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 407E05E01A814423009EEE07 /* libz.dylib */; };
+		407E05E41A814483009EEE07 /* ParseOSX.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 407E05CF1A81439F009EEE07 /* ParseOSX.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		407E05E51A814488009EEE07 /* Bolts.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 407E05CE1A81439F009EEE07 /* Bolts.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -24,6 +36,20 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		407E05E31A81446F009EEE07 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				407E05E51A814488009EEE07 /* Bolts.framework in CopyFiles */,
+				407E05E41A814483009EEE07 /* ParseOSX.framework in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		407E05AB1A814360009EEE07 /* Snippets.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Snippets.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		407E05AF1A814360009EEE07 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -34,6 +60,16 @@
 		407E05BD1A814360009EEE07 /* SnippetsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SnippetsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		407E05C21A814360009EEE07 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		407E05C31A814360009EEE07 /* SnippetsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SnippetsTests.swift; sourceTree = "<group>"; };
+		407E05CE1A81439F009EEE07 /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Bolts.framework; sourceTree = "<group>"; };
+		407E05CF1A81439F009EEE07 /* ParseOSX.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ParseOSX.framework; sourceTree = "<group>"; };
+		407E05D21A8143E7009EEE07 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		407E05D41A8143F6009EEE07 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		407E05D61A8143FC009EEE07 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		407E05D81A814402009EEE07 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		407E05DA1A814409009EEE07 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		407E05DC1A814410009EEE07 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		407E05DE1A81441D009EEE07 /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
+		407E05E01A814423009EEE07 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -41,6 +77,16 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				407E05E11A814423009EEE07 /* libz.dylib in Frameworks */,
+				407E05DF1A81441D009EEE07 /* libsqlite3.dylib in Frameworks */,
+				407E05DD1A814410009EEE07 /* SystemConfiguration.framework in Frameworks */,
+				407E05DB1A814409009EEE07 /* Security.framework in Frameworks */,
+				407E05D91A814402009EEE07 /* QuartzCore.framework in Frameworks */,
+				407E05D71A8143FC009EEE07 /* CoreLocation.framework in Frameworks */,
+				407E05D51A8143F6009EEE07 /* CoreGraphics.framework in Frameworks */,
+				407E05D31A8143E7009EEE07 /* CFNetwork.framework in Frameworks */,
+				407E05D01A81439F009EEE07 /* Bolts.framework in Frameworks */,
+				407E05D11A81439F009EEE07 /* ParseOSX.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -60,6 +106,7 @@
 				407E05AD1A814360009EEE07 /* Snippets */,
 				407E05C01A814360009EEE07 /* SnippetsTests */,
 				407E05AC1A814360009EEE07 /* Products */,
+				407E05E21A81442C009EEE07 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -75,9 +122,7 @@
 		407E05AD1A814360009EEE07 /* Snippets */ = {
 			isa = PBXGroup;
 			children = (
-				407E05B01A814360009EEE07 /* AppDelegate.swift */,
 				407E05B21A814360009EEE07 /* ViewController.swift */,
-				407E05B41A814360009EEE07 /* Images.xcassets */,
 				407E05B61A814360009EEE07 /* Main.storyboard */,
 				407E05AE1A814360009EEE07 /* Supporting Files */,
 			);
@@ -87,6 +132,8 @@
 		407E05AE1A814360009EEE07 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				407E05B41A814360009EEE07 /* Images.xcassets */,
+				407E05B01A814360009EEE07 /* AppDelegate.swift */,
 				407E05AF1A814360009EEE07 /* Info.plist */,
 			);
 			name = "Supporting Files";
@@ -109,6 +156,32 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		407E05CD1A81439F009EEE07 /* Parse */ = {
+			isa = PBXGroup;
+			children = (
+				407E05CE1A81439F009EEE07 /* Bolts.framework */,
+				407E05CF1A81439F009EEE07 /* ParseOSX.framework */,
+			);
+			name = Parse;
+			path = "parse-osx-library-1";
+			sourceTree = "<group>";
+		};
+		407E05E21A81442C009EEE07 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				407E05E01A814423009EEE07 /* libz.dylib */,
+				407E05DE1A81441D009EEE07 /* libsqlite3.dylib */,
+				407E05DC1A814410009EEE07 /* SystemConfiguration.framework */,
+				407E05DA1A814409009EEE07 /* Security.framework */,
+				407E05D81A814402009EEE07 /* QuartzCore.framework */,
+				407E05D61A8143FC009EEE07 /* CoreLocation.framework */,
+				407E05D41A8143F6009EEE07 /* CoreGraphics.framework */,
+				407E05D21A8143E7009EEE07 /* CFNetwork.framework */,
+				407E05CD1A81439F009EEE07 /* Parse */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -119,6 +192,7 @@
 				407E05A71A814360009EEE07 /* Sources */,
 				407E05A81A814360009EEE07 /* Frameworks */,
 				407E05A91A814360009EEE07 /* Resources */,
+				407E05E31A81446F009EEE07 /* CopyFiles */,
 			);
 			buildRules = (
 			);
@@ -325,6 +399,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/parse-osx-library-1",
+				);
 				INFOPLIST_FILE = Snippets/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -336,6 +414,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/parse-osx-library-1",
+				);
 				INFOPLIST_FILE = Snippets/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
